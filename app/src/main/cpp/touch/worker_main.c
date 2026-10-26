@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
         ancore_reaper_unlock(&reaper);
     }
 
-    /* Always release the physical grab and destroy the virtual device before
+    /* Always release physical grab and destroy the virtual device before
        returning. This prevents the next start/stop cycle from leaving stale
        touch state behind. */
     ancore_reaper_lock(&reaper);
